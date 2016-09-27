@@ -1,1 +1,1 @@
-perl -na -e 'for ( $i = 0; $i < @F; $i++ ) { print "$F[$i]"; if ($i > 7) { print " " } else { print ";" } }'
+perl -na -e 'for ( $i = 0; $i < @F; $i++ ) { print "$F[$i]" ; if ($i > 7) { print " " } else { print ";" } } print "\n"'
