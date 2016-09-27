@@ -1,0 +1,1 @@
+perl -naF';' -e 'BEGIN { $cnt1 = 0; $cnt2 = -1 } $cnt2++ ; if ($F[4] > 1024 * 1024) { print "$F[8]"; $cnt1++; } } {print "$cnt1 $cnt2\n" '
