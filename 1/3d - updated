@@ -6,7 +6,7 @@ use DDP;
 my @res = ();
 while (<>) {
     my @tmp = split(';');
-    $tmp[8] =~ s/\s+$//; #It is to delete \n at the end of filename. After RegExp lection i rewrote it :)
+    $tmp[8] =~ s/\n//; #It is to delete \n at the end of filename. After RegExp lection i rewrote it :)
     push @res,  \@tmp;
 }
 
