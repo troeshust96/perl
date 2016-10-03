@@ -13,4 +13,5 @@ while (<>) {
 print "Data::Dumper demo:\n";
 print Dumper(@res);
 print "Data::Printer demo:\n";
-p @res
+p @res;
+1;
