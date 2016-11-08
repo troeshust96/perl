@@ -1,0 +1,17 @@
+use strict;
+use warnings;
+use Data::Dumper;
+use DDP;
+
+my @res = ();
+while (<>) {
+    my @tmp = split(';');
+    chomp($tmp[8]);
+    push @res,  \@tmp;
+}
+
+print "Data::Dumper demo:\n";
+print Dumper(@res);
+print "Data::Printer demo:\n";
+p @res;
+1;
